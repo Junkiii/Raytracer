@@ -1,0 +1,952 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+html, body {
+	margin: 0;
+	font-family: 'Poppins', sans-serif; 
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	cursor: default;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+section {
+	z-index: 1;
+}
+
+.landing {
+	height: 70vh;
+	width: 100vw;
+}
+
+.main_img {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-image: url('assets/main_img.png');
+	background-position: center;
+	background-size: cover;
+}
+
+.main_img a {
+	text-decoration: none;
+}
+
+.landing_title {
+	width: 50%;
+	position: absolute;
+	left: 50%;
+	right: 50%;
+	top: 50%;
+	bottom: 50;
+	transform: translate(-50%, -50%);
+
+	color: #eee;
+	text-align: center;
+}
+
+.landing_title h1{
+	font-size: 3em;
+	font-weight: 1000.0;
+	text-shadow: 2px 2px 2px #444;
+}
+
+.landing_title h2 {
+	font-size: 1.2em;
+	color: #aaa;
+	font-weight: 1.0;
+	text-shadow: 0.5px 0.5px 0.5px #444;
+}
+
+.landing_title h3 {
+	font-size: 0.9em;
+	color: #aaa;
+	font-weight: 1.0;
+	text-shadow: 0.5px 0.5px 0.5px #444;
+}
+
+.landing button {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	margin: 0.5rem;
+	margin-top: 1rem;
+	text-decoration: none;
+	border: none;
+	border-radius: 5px;
+
+	transition: all 0.5s;
+	border: solid 2px #292821;
+	background-color: #292821;
+	color: #eee;
+	cursor: pointer;
+}
+
+.landing button:hover {
+	border: solid 2px #eee;
+}
+
+.overview {
+	width: 100%;
+	background: #292821;
+}
+
+.overview .title{
+	text-align: center;
+	padding-top: 2rem;
+}
+
+.overview .title h {
+	font-size: 2em;
+	font-weight: 500;
+	color: #eee;
+}
+
+.overview .container {
+	margin: auto;
+	display: flex;
+	padding: 1rem;
+	justify-content: space-around;
+	align-items: center;
+	width: 60%;
+	overflow: hidden;
+}
+
+.overview .column {
+	width: 30%;
+}
+
+.overview .row {
+	height: 50%;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+}
+
+.overview .card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+	border-radius: 5px 5px 5px 5px;
+	cursor: pointer;
+	transition: all 1s;
+	text-align: center;
+	height: 23vh;
+	color: #222;
+	background: #ccc;
+	overflow: hidden;
+	border: none;
+}
+
+.overview .card:hover .img {
+	transform: scale(1.10); 
+	filter: blur(0);
+}
+
+.overview .card h4 {
+	font-size: 0.8rem;
+	font-weight: 100;
+	z-index: 2;
+	background: #eee;
+	margin: 0;
+	padding: 0.5rem;
+	padding: 0.5rem;
+	
+}
+
+.overview .card {
+	text-decoration: none;
+}
+
+.card .img {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	border-radius: 0px 0px 5px 5px;
+	transition: all 0.2s;
+	filter: blur(1px);
+	transform: scale(1.05);
+}
+
+.card1 .img {
+	
+	background-image: url('assets/bee.png');
+	background-position: center;
+	background-size: cover;
+	
+}
+.card2 .img {
+	background-image: url('assets/blender.png');
+	background-position: center;
+	background-size: cover;
+}
+.card3 .img {
+	background-image: url('assets/threading.PNG');
+	background-position: center;
+	background-size: cover;
+}
+.card4 .img {
+	background-image: url('assets/mat.png');
+	background-position: center;
+	background-size: cover;
+}
+.card5 .img {
+	background-image: url('assets/light.png');
+	background-position: center;
+	background-size: cover;
+}
+.card6 .img {
+	background-image: url('assets/bump.png');
+	background-position: center;
+	background-size: cover;
+}
+.card7 .img {
+	background-image: url('assets/perfor1.png');
+	background-position: center;
+	background-size: cover;
+}
+
+.card8 .img {
+	background-image: url('assets/ref.png');
+	background-position: center;
+	background-size: cover;
+}
+
+.concept {
+	width: 100%;
+	background: #eee;
+	padding-bottom: 2rem;
+}
+
+.concept .title {
+	text-align: center;
+	padding-top: 2rem;
+}
+
+.concept .title h {
+	font-size: 2em;
+	font-weight: 500;
+	color: #222;
+}
+
+.concept .q {
+	
+	font-style: italic;
+}
+
+.concept .descr {
+	text-align: center;
+	width: 50vw;
+	margin: auto;
+}
+
+.space {
+	position: relative;
+}
+
+.parallax {
+	background: url('assets/main_img.png') no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 200px;
+}
+
+.modelling {
+	position: relative;
+	width: 100%;
+	background-image: url('assets/scene.png');
+	background-position: center;
+	background-size: cover;
+	height: 500px;
+}
+
+.modelling .blender_icon {
+	position: absolute;
+	top: 2vh;
+	right: 2vh;
+	background-image: url('assets/blender_icon.png');
+	background-size: cover;
+	background-position: center;
+	width: 10vh;
+	height: 10vh;
+}
+
+.modelling .model {
+	position: absolute;
+	left: 55%;
+	width: 35%;
+}
+
+.materials {
+	background: #292821;
+	height: 700px;
+	overflow: hidden;
+}
+
+.materials .sec {
+	padding-top: 2rem;
+}
+
+.materials .title {
+	text-align: center;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+.materials .title h1 {
+	font-size: 2em;
+	font-weight: 500;
+	color: #eee;
+	margin: 0;
+}
+
+.materials .wrapper {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 80vw;
+	margin: auto;
+}
+
+.materials .column {
+	width: 50%;
+	display: flex;
+}
+
+.materials .row {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	height: 300px;
+	width: 22%;
+	background: #eee;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+}
+
+.materials .row h1 {
+	font-size: 1.0em;
+	font-weight: 250;
+	color: #222;
+	
+}
+
+.materials .descr {
+	width: 50%;
+	margin: auto;
+	padding-bottom: 2rem;
+	text-align: center;
+}
+
+.materials .descr p {
+	margin: 0;
+	color: #eee;
+}
+
+.materials .img {
+	height: 100%;
+	border-radius: 0px 0px 5px 5px;
+	filter: blur(2px);
+	transform: scale(1.1);
+	transition: all 0.5s;
+}
+
+.materials .card_t {
+	background-color: #eee;
+	z-index: 1;
+}
+
+.materials .row:hover .img {
+	filter: blur(0);
+	transform: scale(1.15);
+}
+
+.materials .imgGlass {
+	background-image: url('assets/glass.png');
+	background-position: center;
+	background-size: cover;
+}
+
+.materials .imgFuzzy {
+	background-image: url('assets/fuzzy.png');
+	background-position: center;
+	background-size: cover;
+}
+
+.materials .imgMetal {
+	background-image: url('assets/knive.png');
+	background-position: center;
+	background-size: cover;
+}
+
+.materials .imgWater {
+	background-image: url('assets/water.png');
+	background-position: center;
+	background-size: cover;
+}
+
+.bumping {
+	background: #eee;
+	height: 560px;
+	overflow: hidden;
+}
+
+.bumping .title {
+	text-align: center;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+.bumping .title h1 {
+	font-size: 2em;
+	font-weight: 500;
+	color: #222;
+	margin: 0;
+}
+
+.bumping .descr {
+	width: 50%;
+	text-align: center;
+	margin: auto;
+}
+
+.bumping .descr p {
+	margin: 0;
+	margin-bottom: 2rem;
+}
+
+
+
+.bump_slider_wrap {
+	width: 600px;
+	height: 300px;
+	margin: auto;
+	
+}
+
+.lighting {
+	position: relative;
+}
+
+.lighting .title {
+	text-align: center;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content:center;
+}
+
+.lighting .title h1 {
+	font-size: 2em;
+	font-weight: 500;
+	color: #222;
+	margin: 0;
+	margin-right: 1rem;
+}
+
+.lighting .icon {
+	position: absolute;
+	top: 5vh;
+	right: 5vh;
+}
+
+.lighting i {
+	font-size: 3rem;
+	color: #fce27a;
+}
+
+.lighting .content {
+	width: 50%;
+	margin: auto;
+	text-align: center;
+	padding-bottom: 2rem;
+}
+
+.lighting .window {
+	padding: 2rem;
+	background-image: url('assets/window.png');
+	background-position: center;
+	background-size: cover;
+}
+
+.lighting .window p{
+	width: 40%;
+	margin-left: 2rem;
+}
+
+.img-comp-container {
+	position: relative;
+	height: 300px; /*should be the same height as the images*/
+	width: 600px;
+  }
+  
+.img-comp-img {
+	position: absolute;
+	height: auto;
+	width: auto;
+	overflow:hidden;
+}
+  
+.img-comp-img img {
+	display:block;
+	vertical-align: middle;
+}
+  
+.img-comp-slider {
+	position: absolute;
+	z-index:9;
+	cursor: ew-resize;
+	/*set the appearance of the slider:*/
+	width: 40px;
+	height: 40px;
+	background-color: #292821;
+	opacity: 0.7;
+	border-radius: 50%;
+}
+
+.bumping img {
+	border-radius: 5px 5px 5px 5px;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.ref .collapsible {
+	background-color: #a3a192;
+	color: #222;
+	cursor: pointer;
+	padding: 10px;
+	width: 100%;
+	border: none;
+	text-align: center;
+	outline: none;
+	font-size: 15px;
+	transition: all 0.4s;
+}
+  
+.ref .active, .collapsible:hover {
+	background-color: #706f65;
+	color: #eee;
+}
+  
+.ref .content {
+	padding: 0 18px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	background-image: url('assets/main_img_bw.png');
+	background-position: center;
+	background-size: cover;
+}
+
+.ref .wrapper {
+	padding: 1.5rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.ref .wrapper a {
+	color: #eee;
+	font-size: 1em;
+	text-decoration: none;
+	transition: all 0.5s;
+}
+
+.ref .wrapper a:hover {
+	color: #bbb;
+}
+
+.threading {
+	position: relative;
+	height: 1300px;
+}
+
+.threading .parallax {
+	background: url('assets/code.png') no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100%;
+}
+
+.threading .title{
+	text-align: center;
+	padding-top: 2rem;
+}
+
+.threading .title h1 {
+	font-size: 2em;
+	font-weight: 500;
+	color: #eee;
+}
+
+.threading .wrapper {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+.threading .descr p{
+	color: #eee;
+}
+
+.threading .comp {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.threading .comp h2 {
+	color: #eee;
+	font-size: 1rem;
+}
+
+.threading .comp .column {
+	padding: 1rem;
+}
+
+.threading .samplemaps p {
+	color: #eee;
+}
+
+
+.benchmark {
+	background: #292821;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+.bechmark .ref {
+	height: 200px;
+	background: #000;
+
+}
+
+.benchmark i {
+	font-size: 2rem;
+	color: #eee;
+	transition: all 3s;
+}
+
+.benchmark .column:hover i {
+	transform: rotate(360deg);
+}
+
+.benchmark .scene {
+	width: 60%;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	
+}
+
+.benchmark h2 {
+	font-size: 1.5em;
+	font-weight: 300;
+	margin: 0.2em;
+	color: #eee;
+}
+
+.benchmark p {
+	font-size: 1.3em;
+	margin: 0.2em;
+	color: #eee;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.benchmark hr {
+	border-top: 1px solid #888;
+	border-color: #AAA;
+	background-color: #AAA;
+	color: #AAA;
+	width: 90%;
+	margin-top: .8rem;
+	margin-bottom: 1rem;
+}
+
+.benchmark .column {
+	width: 20%;
+}
+
+.benchmark .system {
+	width: 100%;
+	
+}
+
+.benchmark .wrapper {
+	width: 60%;
+	margin: auto;
+	color: #eee;
+}
+
+footer .bar1 {
+	width: 100%;
+	height: 40px;
+	background: #3d3c31;
+}
+
+footer .bar2 {
+	width: 100%;
+	height: 40px;
+	background: #292821;
+}
+
+footer .main-foot{
+	background: #0e0e0b;
+	color: #EEE;
+	padding: 2rem;
+}
+
+footer h3 {
+	font-size: 1em;
+	text-align: center;
+	font-weight: 1;
+}
+
+footer p {
+	margin-left: 2.2rem;
+	font-size: 0.8rem;
+}
+
+footer .columns {
+	display: flex;
+	justify-content: space-around;
+}
+
+footer .box {
+	width: 40%;
+}
+
+footer hr {
+	border-top: 1px solid #888;
+	border-color: #AAA;
+	background-color: #AAA;
+	color: #AAA;
+	width: 90%;
+	margin-top: .8rem;
+	margin-bottom: 1rem;
+}
+
+footer h5 {
+	text-align: center;
+	margin: 0;
+}
+footer h4 {
+	margin:0;
+	margin-top: 0.7em;
+	font-weight: 100;
+	text-align: center;
+	font-size: 0.5rem;
+}
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+	.overview .container {
+		width: 90%;
+	}
+
+	.overview .container h4 {
+		font-size: 0.8rem;
+	}
+
+	.landing button {
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		font-size: 0.8em;
+	}
+}
+@media (max-width: 768px) {
+	.concept .title h {
+		font-size: 1.7em;
+	}
+
+	.concept p {
+		font-size: 0.9em;
+	}
+
+	.modelling p {
+		font-size: 0.9em;
+	}
+
+	.blender_icon {
+		width: 5vh;
+		height: 5vh;
+	}
+
+	.materials .title h2 {
+		font-size: 1.7em;
+	}
+
+	.materials p {
+		font-size: 0.9em;
+	}
+
+	.bumping .title h2 {
+		font-size: 1.7em;
+	}
+
+	.bumping p {
+		font-size: 0.9em;
+	}
+
+	.threading .title h2 {
+		font-size: 1.7em;
+	}
+
+	.threading p {
+		font-size: 0.9em;
+	}
+
+	.threading .wrapper {
+		width: 80%;
+	}
+
+	.benchmark .scene {
+		width: 90%;
+	}
+
+	.benchmark .system {
+		width: 90%;
+	}
+
+	.benchmark p {
+		font-size: 0.9em;
+	}
+
+	.lighting p {
+		font-size: 0.9em;
+	}
+
+	.lighting h1 {
+		font-size: 1.7em;
+	}
+}
+@media (max-width: 576px) {
+	.concept .descr{
+		width: 90%;
+	}
+
+	.landing h1 {
+		font-size: 1.9em;
+	}
+
+	.landing h2 {
+		font-size: 1em;
+	}
+
+	.landing h3 {
+		font-size: 0.8em;
+	}
+
+	.nav-links {
+		width: 100%;
+	}
+
+	.overview .title h {
+		font-size: 1.3em;
+	}
+
+	.overview .container {
+		width: 100%;
+	}
+
+	.overview .container h4 {
+		font-size: 0.6em;
+	}
+
+	.overview .row {
+		margin: 0.5rem;
+	}
+
+	.concept .title h {
+		font-size: 1.3em;
+	}
+
+	.concept p {
+		font-size: 0.7em;
+	}
+
+	.modelling p {
+		font-size: 0.7em;
+	}
+
+	.materials .title h1 {
+		font-size: 1.3em;
+	}
+
+	.materials p {
+		font-size: 0.7em;
+	}
+
+	.materials .wrapper {
+		width: 100%;
+	}
+
+	.materials .card_t h1 {
+		font-size: 0.9em;
+	}
+
+	.bumping .title h1 {
+		font-size: 1.3em;
+	}
+
+	.bumping p {
+		font-size: 0.7em;
+	}
+
+	.threading .title h1 {
+		font-size: 1.3em;
+	}
+
+	.threading p {
+		font-size: 0.7em;
+	}
+
+	.benchmark .scene {
+		width: 100%;
+	}
+
+	.benchmark .system {
+		width: 100%;
+	}
+
+	.benchmark .column h2 {
+		font-size: 1em;
+	}
+
+	.benchmark .system {
+		font-size: 0.7em;
+	}
+
+	.ref .column a{
+		font-size: 0.7em;
+	}
+
+	.lighting p {
+		font-size: 0.7em;
+	}
+
+	.lighting h1 {
+		font-size: 1.3em;
+	}
+
+	footer h3 {
+		font-size: 0.8em;
+	}
+
+	footer .box {
+		width: 50%;
+	}
+}

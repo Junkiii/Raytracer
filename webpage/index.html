@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Summer dreaming.  Computer Graphics 1 UdS</title>
+    
+    <script src="scripts/imagecomp.js"></script>
+    <script src="scripts/incnumbers.js"></script>
+    
+    <script src="https://kit.fontawesome.com/cd72ec649d.js" crossorigin="anonymous"></script>
+
+    <link href="style_index.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="fontawesome-free-5.15.2-web/css/all.css">-->
+</head>
+
+<body>
+    
+
+	<section class=landing>
+        
+        <div class=main_img>
+            <div class="landing_title">
+                <h1>Summer dreaming.</h1>
+                <h2>for the Rendering Competition 2020</h2>
+                <h3>by Hendrik Junkawitsch</h3>
+                <div class="imgs">
+                    <a href="assets/500base2000add;10.77h.png">
+                        <button>1920x1080</button>
+                    </a>
+                    <a href="assets/480base270add;6.35h.png">
+                        <button>480x270</button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="overview">
+        <div class="title">
+            <h>Overview</h>
+        </div>
+        <div class="container">
+            <div class="column">
+                <div class="row">
+                    <a href="#concept_sect"class="card card1">
+                        <div class="img"></div>
+                        <h4>Concept</h4>
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="#threading_sect" class="card card3">
+                        <div class="img"></div>
+                        <h4>Multithreading</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column">
+                <div class="row">
+                    <a href="#modelling_sect" class="card card2">
+                        <div class="img"></div>
+                        <h4>Scene Building</h4>
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="#light_sect" class="card card5">
+                        <div class="img"></div>
+                        <h4>Lighting</h4>
+                    </a>
+                </div>
+               
+            </div>
+            <div class="column">
+                <div class="row">
+                    <a href="#materials_sect" class="card card4">
+                        <div class="img"></div>
+                        <h4>Materials</h4>
+                    <a>
+                </div>
+                <div class="row">
+                    <a href="#benchmark_sect" class="card card7">
+                        <div class="img"></div>
+                        <h4>Benchmarks</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column">
+                <div class="row">
+                    <a href="#bumping_sect" class="card card6">
+                        <div class="img"></div>
+                        <h4>Bump Mapping</h4>
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="#ref_sect" class="card card8">
+                        <div class="img"></div>
+                        <h4>References</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="space">
+		<div class="parallax">
+			
+		</div>
+	</section>
+
+    <section id="concept_sect" class="concept">
+        <div class="title">
+            <h>Concept</h>
+        </div>
+        <div class="descr">
+            <p class="q">'Summer will end soon enough, and childhood as well.'</p>
+            <p>~ George R.R. Martin in Game of Thrones.</p>
+            <p>Summer dreaming.</p>
+            <p>While I was sitting at my desk somewhere in the middle of Saarbrücken my thoughts wandered away from raytracing and coding. Wistfully I thought back to the summer where everything was different. The hot summer days with good friends and a few cocktails for cooling ourselves down.</p>
+            <p>Now ‘winter is here’ and childhood is gone. But why should we be sad about it?</p>
+            <p>I realized that I could just bring some of the warmth of these cocktail summer days into my apartment, while cold rain was drumming on the windows.</p>
+            <p>And thus, the idea was born to create a warm summer themed scene with cocktails and a lot of nostalgia and hope for better days.</p>
+            <p>It was time to give the sketch some shape.</p>
+        </div>
+    </section>
+
+    <section id="modelling_sect" class="modelling">
+        <div class="blender_icon">
+
+        </div>
+        <div class="model">
+            <p>To model my scene, I used the free modeling/rendering software Blender.</p>
+            <p>I tried to find the right assets that would fit the overall theme of my scene. I completely redesigned the room with a new table, flowers, plants and a few things you need to make yourself some cocktails. I ended up modeling the water spill and the ice cubes myself. In total the scene includes 1.7 million faces. </p>
+            <p>A lot of trial and error…</p>
+            <p>But finally I got a good result with a summery atmosphere.</p>
+        </div>
+    </section>
+
+    <section class="space">
+		<div class="parallax">
+			
+		</div>
+    </section>
+    
+    <section id="materials_sect" class="materials">
+        <div class="title">
+            <h1>Special Materials</h1>
+        </div>
+        <div class="descr">
+            <p>I used complex glass, steel, fuzzy mirror and water materials for a realistic image.</p>
+        </div>
+        <div class="wrapper">
+            <div class="row">
+                <div class="card_t">
+                    <h1>Glass</h1>
+                </div>
+                <div class="img imgGlass"></div>
+            </div>
+            <div class="row">
+                <div class="card_t">
+                    <h1>FuzzyMirror</h1>
+                </div>
+                <div class="img imgFuzzy"></div>
+            </div>
+            <div class="row">
+                <div class="card_t">
+                    <h1>Metal</h1>
+                </div>
+                <div class="img imgMetal"></div>
+            </div>
+            <div class="row">
+                <div class="card_t">
+                    <h1>Water</h1>
+                </div>
+                <div class="img imgWater"></div>
+            </div>
+        </div>
+        <div class="descr sec">
+            <p>The water is just a GlassMaterial but with a modified refraction index. Additionally I had to ignore the water spill in the light computation in the integrator such that the shadow ray can reach a light source.</p>
+        </div>
+    </section>
+
+    <section id="bumping_sect" class="bumping">
+        <div class="title">
+            <h1>Bump Mapping</h1>
+        </div>
+        
+        <div class="descr">
+            <p>Bump Mapping to give the texture micro structure and make the picture even more realistic. Use the slider to see the difference.</p>
+        </div>
+
+        <div class="bump_slider_wrap">
+            <div class="img-comp-container">
+                <div class="img-comp-img">
+                  <img src="assets/700Complete;10,31h.png" width="600" height="300">
+                </div>
+                <div class="img-comp-img img-comp-overlay">
+                  <img src="assets/700CompleteNoBump;10h.png" width="600" height="300">
+                </div>
+              </div>
+
+            <script>
+                //initComparisons();
+            </script>
+        </div>
+
+        <div class="descr">
+
+        </div>
+    </section>
+
+    <section id="light_sect" class="lighting">
+        <div class="title">
+            <h1>Lighting</h1>
+        </div>
+        <div class="content">
+            <p>To achieve a balanced lighting and to avoid hard shadows I only used two area lights.</p>
+            <p>I changed the color of the lights to a yellowish white to create a warm and peaceful environment.</p>
+        </div>
+
+        <div class="window">
+            <p>I added a light emitting plane with an emission map to simulate a blue sky and green fields outside.</p>
+            <p>One area light was placed directly opposite to the window to create a strong reflection on the glass to overexpose the window.</p>
+        </div>
+
+        <div class="icon">
+            <i class="far fa-lightbulb"></i>
+        </div>
+    </section>
+
+    <section id="threading_sect" class="threading">
+        <div class="parallax"></div>
+    
+        <div class="wrapper">
+            <div class="title">
+                <h1>Multithreading and Sample Maps</h1>
+            </div>
+            <div class="descr">
+                <p>To make use of the full power of my cpu I implemented parallel rendering. By using <b>per-pixel parallelism</b> I achieve almost perfect workload of all threads.</p>
+                <p>This allowed me to keep all 16 threads of the AMD Ryzen 3700X running for the whole rendering time. Resulting in over 10 times faster rendering speeds.</p>
+            </div>
+
+            <div class="comp">
+                <div class="column">
+                    <h2>No Multithreading</h2>
+                    <h2>41.98sec (480x270 / 1 Sample)</h2>
+                </div>
+                <div class="column">
+                    <h2>Multithreading</h2>
+                    <h2>3.98sec (480x270 / 1 Sample)</h2>
+                </div>
+            </div>
+
+            <div class="samplemaps">
+                <p>I realized that even with 700 Samples per pixel the complex glass structures are not looking as good as i hoped them to.</p>
+                <p>Adding <b>Sampling Maps</b> allowed me to render different parts of the image with different sampling numbers. With this approach i was able to focus the rendering power on glass structures and not waste it for simple materials.</p>
+                <p>Even though the difference is small, it is definitely visible that the glass materials look less noisy in the image with Sample Mapping.</p>
+                <p>Use the slider to see the difference.</p>
+            </div>
+
+            <div class="comp">
+                <div class="column">
+                    <h2>With Samplemap</h2>
+                    <h2>500 base samples and glass with 2500 Samples; 10.769h</h2>
+                </div>
+                <div class="column">
+                    <h2>Without Samplemap</h2>
+                    <h2>700 Samples; 10.3h</h2>
+                </div>
+            </div>
+
+            <div class="bump_slider_wrap">
+                <div class="img-comp-container">
+                    <div class="img-comp-img">
+                      <img src="assets/500base2000add;10.77h.png" width="600" height="300">
+                    </div>
+                    <div class="img-comp-img img-comp-overlay">
+                      <img src="assets/700Complete;10,31h.png" width="600" height="300">
+                    </div>
+                  </div>
+    
+                <script>
+                    initComparisons();
+                </script>
+            </div>
+        </div>
+        
+    </section>
+    
+    <section id="benchmark_sect" class="benchmark">
+        <div class="scene">
+            <div class=column>
+                <i class="far fa-square"></i>
+                <h2>Faces</h2>
+                <p id="nbr">1.780.373</p>
+                
+            </div>
+            <div class="column">
+                <i class="fas fa-pencil-alt"></i>
+                <h2>Time</h2>
+                <p id="nbr">10.769h</p>
+            </div>
+            <div class="column">
+                <i class="fas fa-ruler-combined"></i>
+                <h2>Resolution</h2>
+                <p id="nbr">1920x1080</p>
+            </div>
+            <div class="column">
+                <i class="fas fa-random"></i>
+                <h2>Samples</h2>
+                <p id="nbr">500 - 2500</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="system">
+            <div class="wrapper">
+                <h2>All facts:</h2>
+                <ul>
+                    <li>
+                        Scene
+                        <ul>
+                            <li>Faces: 1.730.373</li>
+                            <li>Ray Tracing depth: 6</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Machine
+                        <ul>
+                            <li>AMD Ryzen 7 3700X (out of the box) / 8 cores / 16 threads</li>
+                            <li>16GB RAM 3200MHz</li>
+                        </ul>
+                    </li>
+                    <li>
+                        High resolution image:
+                        <ul>
+                            <li>Resolution: 1920x1080</li>
+                            <li>Samples: 500 - 2500</li>
+                            <li>Rendering time: 10.769h</li>
+                            
+                        </ul>
+                    </li>
+                    <li>
+                        Low resolution image:
+                        <ul>
+                            <li>Resolution: 480x270</li>
+                            <li>Samples: 7000</li>
+                            <li>Rendering time: 6.35h</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="space">
+		<div class="parallax">
+			
+		</div>
+    </section>
+
+    <section id="ref_sect" class="ref">
+        <button type="button" class="collapsible">References (click me &#x1F642;)</button>
+        <div class="content">
+            <div class="wrapper">
+                <div class="column">
+                    <a href="https://www.cgtrader.com/free-3d-models/interior/kitchen/3dnikmodels-kitchen-counter-07">Room model (basic structure)</a> <br>
+                    <a href="https://www.cgtrader.com/free-3d-models/food/beverage/glass-v2">Glass (Foreground)</a> <br>
+                    <a href="https://www.cgtrader.com/free-3d-models/furniture/table/wooden-table-9ff1d9d1-e583-448e-83b5-a6b03142433d">Table</a> <br>
+                    <a href="https://www.turbosquid.com/de/3d-models/free-max-model-pineapple/741563">Ananas</a> <br>
+                    <a href="https://www.cgtrader.com/free-3d-models/plant/pot-plant/protea-set-of-flowers">Flower</a> <br>
+                </div>
+                <div class="column">
+                    <a href="https://www.cgtrader.com/free-3d-models/plant/pot-plant/indoor-plants">Plants</a> <br>
+                    <a href="https://www.cgtrader.com/free-3d-models/interior/kitchen/simple-cutting-board">Cutting board</a> <br>
+                    <a href="https://www.cgtrader.com/free-3d-models/household/kitchenware/kitchen-knife-bfbc90aa-889b-4bc8-9009-b4de5448b654">Knive</a> <br>
+                    <a href="https://www.cgtrader.com/free-3d-models/food/beverage/orange-juice-707f2f10-a78e-4701-aa60-7f7e452ccd42">Cocktail</a> <br>
+                    <a href="https://horizon-magazine.eu/article/european-science-cloud-horizon.html">Landscape</a> <br>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight){
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    } 
+                });
+            }     
+        </script>
+    </section>
+
+    
+
+    <footer>
+		<div class="bar1"></div>
+		<div class="bar2"></div>
+		<div class="main-foot">
+			<div class="columns">
+				<div class="box">
+					<h3>Acknowledgement</h3>
+					<hr>
+					<p>I would like to thank my girlfriend for keeping me hydrated and well saturated</p>
+                    <p>and my good friends for giving me their honest opinions.</p>
+                    <p>The website is made with plaine html/css.</p>
+				</div>
+				<div class="box">
+					<h3>Summer dreaming.</h3>
+					<hr>
+					<p>by Hendrik Junkawitsch</p>
+                        <p>group1E</p>
+				</div>
+			</div>
+			<hr>
+			<div>
+				<h5>&copy; Hendrik Junkawitsch</h5>
+				<h4>Computer Graphics 2020-21 Rendering Competition at Saarland University</h5>
+			</div>
+		</div>
+	</footer>
+	
+</body>
+</html>
